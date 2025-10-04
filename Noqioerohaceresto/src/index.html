@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Arizona</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación Fija -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+ <div class="background">
+
+  <!-- Cuadro alargado -->
+  <div class="name-header">
+    Nombre de los papus
+  </div>
+
+  <!-- Cuadros participantes -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="participant-box glow-green">Erika</div>
+    <div class="participant-box glow-purple">Ren</div>
+    <div class="participant-box glow-red">Rubi</div>
+  </div>
+
+  <!-- Imagen representativa -->
+  <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/5e02481f312b31d2f685f0e6cb9cc8a4d8c0b3617dd7c31852c5157b1533dca1._RI_TTW_.jpg" alt="Imagen representativa" class="about-image" />
+
+  <!-- Sección Sobre Nosotros -->
+  <section class="about-section" id="about">
+    <h2>Nosotros be like</h2>
+
+    <div class="cards-container">
+      <div class="card">
+        <h3>¿Quiénes Somos?</h3>
+        <p>Somos un equipo de gente loca que solo está tratando de hacer un página pero pues hacen lo que pueden</p>
+      </div>
+      <div class="card">
+        <h3>Intereses</h3>
+        <p>Nos gusta dormir y cojer y quejarnos de absolutamente todo y divertimos</p>
+      </div>
+      <div class="card">
+        <h3>Conocimientos</h3>
+        <p>Sabemos que no sabemos programar, también sabemos cómo hacer postres bien ricos</p>
+      </div>
+    </div>
+  </section>
+
+
+<div class="name-header" style="margin-top: 50px;">
+  Proyectos
+</div>
+  <!-- Sección de Proyectos -->
+  <section id="projects">
+
+    <!-- Proyecto 1: Verde -->
+    <div class="project-section glow-green">
+      <div class="project-name">sillabufanda</div>
+      <div class="project-content">
+        <div class="project-description">
+          una bufanda que cuando la desdoblas se hace una silla
+        </div>
+        <img src="https://tse2.mm.bing.net/th/id/OIP.spTLe9OVgRMidh_I1OtBsQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagen Proyecto Verde" class="project-image" />
+      </div>
+    </div>
+
+    <!-- Proyecto 2: Morado -->
+    <div class="project-section glow-purple">
+      <div class="project-name">grisuerte</div>
+      <div class="project-content">
+        <div class="project-description">
+ un grillo que es de la suerte y tiene la voz de mushu y es de bolsillo para su conveniencia
+        </div>
+        <img src="https://www.zooplus.es/magazine/wp-content/uploads/2020/07/Grillo-dom%C3%A9stico.webp" alt="Imagen Proyecto Emoinador" class="project-image" />
+      </div>
+    </div>
+
+    <!-- Proyecto 3: Rojo -->
+    <div class="project-section glow-red">
+      <div class="project-name">flojaap</div>
+      <div class="project-content">
+        <div class="project-description">
+          es una app que programa todo lo que necesites y hace todos los pasos solito
+        </div>
+        <img src="https://img.chilango.com/2012/07/no-me-quiero-mover.jpg" alt="Imagen Proyecto Rojo" class="project-image" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section class="contact-section" id="contact">
+    <h2>Contacto</h2>
+    <form class="contact-form" onsubmit="return validateForm()">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2025 Noqierohaceresto. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="#" target="_blank">Facebook</a> |
+      <a href="#" target="_blank">Twitter</a> |
+      <a href="#" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  function validateForm() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      alert("Por favor completa todos los campos.");
+      return false;
+    }
+    return true;
+  }
+</script>
+
+</body>
+</html>
